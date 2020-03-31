@@ -30,7 +30,7 @@ class ReservationController extends Controller
         return view('/reservations',compact('name'));
     }
 
-    public function delete(Reservation $reservations) {
+    public function delete (Reservation $reservations) {
         $reservations->delete();
 
         return redirect('/hotels');  
